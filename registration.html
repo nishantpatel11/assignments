@@ -17,15 +17,15 @@
     <body>
         <div class="container-fliud">
             <div class="row">
-                <div class="col-3 p-0">
+                <div class="col-3 m-0 p-0">
                     <nav class="navbar navbar-light bg-light">
                         <a class="navbar-brand" href="#">
                           <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
                         </a>
                       </nav>
                 </div>
-                <div class="col-9 p-3 text-center"> <h1>Online Book Shop </h1></div>
-                <div class="w-100"></div>
+                <div class="col-9 pr-3 pt-3 pl-3 text-center"> <h1>Online Book Shop </h1></div>
+                <div class="w-100 m-0 p-0"></div>
                 <div class="col">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -40,19 +40,87 @@
                 <div class="w-100"></div>
             </div>
             <div class="row">
-                    <div class="col-3 text-center d-block">
+                    <div class="col-2 text-center pt-5 d-block">
                         <a class="nav-link active" href="#">CS</a>
                         <a class="nav-link" href="#">IT</a>
                         <a class="nav-link" href="#">Mechnical</a>
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Electronic</a>
                     </div>
-                    <div class="col-9 p-5">
+                    <div class="col-9 ml-5 p-5">
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                   <h3>Welcome to Online Book Shop</h3>  
                             </div>
                             <div class="tab-pane fade show active" id="nav-registration" role="tabpanel" aria-labelledby="nav-registration-tab">
-                                <h3>Welcome to Online Book Registration</h3>     
+                                <h3 class="justify-content-center">Welcome to Online Book Registration Form</h3>     
+                                <div class="cotainer">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-8">
+                                                    <div class="card">
+                                                        <div class="card-header">Register</div>
+                                                        <div class="card-body">
+                                                            <form name="my-form" onsubmit="return validform()" action="success.php" method="">
+                                                                <div class="form-group row">
+                                                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Full Name</label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="text" id="full_name" class="form-control" name="full-name">
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <div class="form-group row">
+                                                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="text" id="email_address" class="form-control" name="email-address">
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <div class="form-group row">
+                                                                    <label for="user_name" class="col-md-4 col-form-label text-md-right">User Name</label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="text" id="user_name" class="form-control" name="username">
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <div class="form-group row">
+                                                                    <label for="phone_number" class="col-md-4 col-form-label text-md-right">Phone Number</label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="text" id="phone_number" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <div class="form-group row">
+                                                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">Present Address</label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="text" id="present_address" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <div class="form-group row">
+                                                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Permanent Address</label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="text" id="permanent_address" class="form-control" name="permanent-address">
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <div class="form-group row">
+                                                                    <label for="nid_number" class="col-md-4 col-form-label text-md-right"><abbr
+                                                                                title="National Id Card">NID</abbr> Number</label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="text" id="nid_number" class="form-control" name="nid-number">
+                                                                    </div>
+                                                                </div>
+                                
+                                                                    <div class="col-md-6 offset-md-4">
+                                                                        <button type="submit" class="btn btn-primary">
+                                                                        Register
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                </div>                             
                             </div>
                             <div class="tab-pane fade" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
                                 <h3>Welcome to Online Book Login</h3>
